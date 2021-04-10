@@ -1,2 +1,7 @@
-# Seed-Color-Detection
-Describing the color property of seeds and determining if it is good / bad (Still a base prototype)
+# Seed-Classification
+Classification of seeds based on their visible quality Color-API-IMPLEMENTATION
+
+
+Deployed as an API at : 
+
+Upload only PNG/JPG Files
