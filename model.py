@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing.image import load_img
 
 
 np.set_printoptions(suppress=True)
-model = tensorflow.keras.models.load_model('model.h5')
+model = tensorflow.keras.models.load_model('Models/keras_model.h5')
 
 def preprocess_image(image,target_size=(224, 224)):
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
