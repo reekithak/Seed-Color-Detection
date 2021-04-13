@@ -1,0 +1,6 @@
+2021-04-13T16:10:24.142714865Z 2021-04-13 16:10:24.142407: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-04-13T16:10:24.152274540Z 2021-04-13 16:10:24.152145: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2397220000 Hz
+2021-04-13T16:10:25.287681794Z [('photo', [<FileStorage: 'passport_size_pic.jpg' ('image/jpeg')>, <FileStorage: 'profile_red.jpg' ('image/jpeg')>])]
+2021-04-13T16:10:25.287734596Z 172.16.2.1 - - [13/Apr/2021:16:10:25 +0000] "POST /upload HTTP/1.1" 200 62 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 Edg/89.0.774.75"
+
+
