@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.image import load_img
 
 
 app = Flask(__name__)
-cors = CORS(app)
+cors = CORS(app,resources={r"/upload/*": {"origins":"*"}})
 
 app.config['CORS_HEADERS'] = 'Content-Type'
 photos = UploadSet('photos',IMAGES)
@@ -26,7 +26,8 @@ def home():
 def upload():
     if request.method == 'POST' and  'photo' in request.files:
         filename = photos.save(request.files['photo'])
-
+        print(request.files)
+        print(request.files['photo'])
         image = load_img('./static/img/'+filename,target_size=(224,224))
 
         prediction = predict(image)
