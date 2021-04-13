@@ -26,8 +26,9 @@ def home():
 def upload():
     if request.method == 'POST' and  'photo' in request.files:
         filename = photos.save(request.files['photo'])
-        print(request.files)
-        print(request.files['photo'])
+        print(list(request.files.lists()))
+        
+            
         image = load_img('./static/img/'+filename,target_size=(224,224))
 
         prediction = predict(image)
