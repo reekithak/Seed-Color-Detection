@@ -1,2 +1,2 @@
-0 Colored
-1 Good
+0 Dull/Bad
+1 Good Seed
